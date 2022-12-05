@@ -12,7 +12,6 @@ public class Computer extends Player {
         ArrayList<Move> movesList = board.getCopyOfMoves();
         double max = 0.0;
         for (Move move : movesList) {
-            System.out.println(move);
             max = Math.max(max, move.value());
         }
         int index = 0;
